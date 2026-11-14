@@ -1,0 +1,14 @@
+h2 {
+    color: rgb(255, 80, 80);
+}
+p {
+    color: green;
+}
+
+button {
+    color: brown;
+    background-color: yellow;
+}
+body {
+    background-color: rgb(66, 66, 66);
+}
