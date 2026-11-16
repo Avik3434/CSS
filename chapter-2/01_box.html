@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box models</title>
+    <style>
+        body {
+            margin: 12px;
+        }
+        #box {
+            background: #e3f1ff;
+            padding: 20px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            
+            transition: all 0.3s ease-in;
+        }
+/* 
+        #box:hover {
+            box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.378);
+            transform: translateY(0px);
+        } */
+
+        #paragraph {
+            color: #1e293b;
+            margin: 0;
+            font-size: 27px;
+            font-weight: 600;
+        }
+
+        #add {
+            background: #2563eb;
+            color: rgb(255, 255, 255);
+            border: none;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            /* padding: 10px 18px; */
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 30px;
+        }
+
+        #add:hover {
+            background: #1d4ed8;
+            box-shadow: 0px 3px 10px #1d4ed8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- <h1>Heading one</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugiat autem blanditiis velit aliquid quidem facere, possimus nobis sunt at ut aspernatur ea, deleniti dolorum vitae similique illum molestiae, nesciunt laudantium numquam harum esse debitis explicabo fuga. Maiores voluptas obcaecati amet eveniet facilis modi deleniti a nesciunt voluptates. At, soluta.</p>
+    <button class="buttonOne">Click me</button> -->
+    <!-- <div>
+        This is a div.
+    </div> -->
+
+    <div id="box">
+        <p id="paragraph">This is a list </p>
+        <button id="add">+</button>
+    </div>
+
+</body>
+
+</html>
