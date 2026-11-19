@@ -1,0 +1,67 @@
+<!-- Create a header footer and a content area with some div boxes with a proper navbar -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-3</title>
+    <link rel="stylesheet" href="practice-3.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a id="amazon" href="https://amazon.com" target="_blank">amazon.in</a>
+            <a class="link" href="">Contact us</a>
+            <a class="link" href="">My cart</a>
+            <a class="link" href="">Account</a>
+            <div class="input-section">
+                <input class="input" type="text" placeholder="Search amazon.in">
+                <button class="submit">Search</button>
+            </div>
+        </nav>
+    </header>
+    <h2 class="content-heading">Content Area</h2>
+    <div id="content">
+    </div>
+    <footer class="footer">
+        Made with love by <span style="font-weight: bold;">Amazon</span> <br>
+        © 1996-2026, Amazon.com, Inc. or its affiliatest
+    </footer>
+</body>
+<script>
+    const divArea = document.getElementById('content');
+
+    const randomColor = () => {
+        const hex = Math.floor(Math.random() * 0xFFFFFF)
+            .toString(16)
+            .padStart(6, "0");
+
+        return `#${hex}80`;
+    };
+
+    for (let i = 0; i < 300; i++) {
+        let color = randomColor()
+        const divBox = document.createElement('div');
+        divBox.classList.add('box');
+        divBox.style.backgroundColor = color;
+        divArea.appendChild(divBox);
+
+        divBox.addEventListener('mouseenter', () => {
+            divBox.style.boxShadow = `0 0 20px 5px ${color}`;
+            divBox.style.transition = 'box-shadow 0.2s ease';
+            divBox.style.border = '1px solid transparent';
+        });
+
+        divBox.addEventListener('mouseleave', () => {
+            divBox.style.boxShadow = 'none';
+            divBox.style.border = ' 1px solid black'
+        });
+    }
+
+
+</script>
+
+</html>
